@@ -1,0 +1,75 @@
+
+.item{
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    color: antiquewhite;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 1px solid red;
+    border-radius: 10px; ;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition:color 400ms;
+    
+}
+.item1{
+    height: 1000px;
+    background-image: url(car.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+   
+}
+.btn{
+    margin-top: 650px;
+    position: relative;
+    background-color:chartreuse;
+    border: 1px solid red;
+    border-radius: 30px; ;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition:color 400ms;
+    
+
+}
+.btn ::before{
+    content:"" ;
+    position: absolute;
+    inset: 0;
+    display: inline-block;
+    background-color: darkorange;
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+    transition:transform 400ms;
+}
+.btn:hover{
+    color: red;
+}
+
+.btn:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.item2{
+    height: 1000px;
+    background-image: url(red.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    color:black;
+}
+.item3{
+    height: 1000px;
+    background-image: url(hand.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color:whitesmoke
+}
